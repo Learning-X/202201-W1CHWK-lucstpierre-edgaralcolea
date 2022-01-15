@@ -60,4 +60,10 @@ ul {
   width: 1.5rem;
 }
 
+.hero {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
