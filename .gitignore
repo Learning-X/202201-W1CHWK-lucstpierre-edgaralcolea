@@ -9,6 +9,10 @@
 .AppleDouble
 .LSOverride
 
+# Compiled files
+styles.css
+styles.css.map
+
 # Icon must end with two \r
 Icon
 

@@ -1,18 +1,73 @@
 @use "base";
 @use "variables";
 
+.navbar {
+  background-color: #f8f8f8;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__placeholder {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--grey {
+      background-color: #bbb8b6;
+    }
+    &--red {
+      background-color: #ff5959;
+    }
+  }
+  &__cart__count {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
+      sans-serif;
+  }
+  &__icon {
+    width: 2.4rem;
+  }
+  &__cart {
+    width: 2.5rem;
+    padding-right: 5px;
+  }
+  &__magnifier {
+    width: 1.5rem;
+  }
+}
+.hero {
+  padding-top: 3rem;
+  height: 25rem;
+  text-align: center;
+}
+.main {
+  height: 40rem;
+  background-color: #f8f8f8;
+  text-align: center;
+  h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 0.5rem;
+    border-top: 3px solid #000;
+  }
+  &__cake {
+    height: 10rem;
+    position: relative;
+    bottom: 5rem;
+  }
+}
 .footer {
   background-color: variables.$primary-mobile;
 
   &__copyright {
-    width: 100%;
+    width: 39rem;
     color: variables.$text-white;
     background-color: variables.$red;
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
     bottom: 0;
     font-size: 1.4rem;
     line-height: 5rem;
@@ -156,62 +211,5 @@
       text-transform: uppercase;
       font-size: 1.4rem;
     }
-  }
-
-.navbar {
-  background-color: #f8f8f8;
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &__placeholder {
-    width: 3.5rem;
-    height: 3.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &--grey {
-      background-color: #bbb8b6;
-    }
-    &--red {
-      background-color: #ff5959;
-    }
-  }
-  &__cart__count {
-    color: #fff;
-    font-size: 1.5rem;
-    font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
-      sans-serif;
-  }
-  &__icon {
-    width: 2.4rem;
-  }
-  &__cart {
-    width: 2.5rem;
-    padding-right: 5px;
-  }
-  &__magnifier {
-    width: 1.5rem;
-  }
-
-}
-.hero {
-  padding-top: 3rem;
-  height: 25rem;
-  text-align: center;
-}
-.main {
-  height: 40rem;
-  background-color: #f8f8f8;
-  text-align: center;
-  h1 {
-    font-family: "Source Sans Pro", sans-serif;
-    letter-spacing: 0.5rem;
-    border-top: 3px solid #000;
-  }
-  &__cake {
-    height: 10rem;
-    position: relative;
-    bottom: 5rem;
   }
 }
