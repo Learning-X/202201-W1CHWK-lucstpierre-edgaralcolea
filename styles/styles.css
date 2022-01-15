@@ -25,6 +25,139 @@ ul {
   list-style: none;
 }
 
+
+.footer {
+  background-color: #f8f8f8;
+}
+.footer__copyright {
+  width: 100%;
+  color: #ffffff;
+  background-color: #ff5958;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  font-size: 1.4rem;
+  line-height: 5rem;
+}
+
+.container {
+  height: 60rem;
+  display: flex;
+  flex-flow: column;
+  padding: 0 3rem;
+  height: 100%;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.container .siguenos {
+  padding-top: 6rem;
+}
+.container .siguenos .siguenos-container {
+  width: 100%;
+}
+.container .siguenos .siguenos-container__text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #67625f;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container .siguenos .siguenos-container__items {
+  display: flex;
+  justify-content: center;
+}
+.container .siguenos .siguenos-container__item {
+  margin: 0 0.5rem;
+}
+.container .siguenos .siguenos-container::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #bbb8b6;
+  padding-bottom: 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .subscribete {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .subscribete .subscribete-container {
+  width: 100%;
+}
+.container .subscribete .subscribete-container__text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #67625f;
+  text-align: center;
+  line-height: 1.6rem;
+  padding: 55px 0 15px;
+}
+.container .subscribete .subscribete-container__form {
+  width: 100%;
+}
+.container .subscribete .subscribete-container__form-container {
+  width: 100%;
+}
+.container .subscribete .subscribete-container__form-container input {
+  width: 100%;
+  height: 4rem;
+  border-color: #bbb8b6;
+}
+.container .subscribete .subscribete-container__privacidad .checkbox-container {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .subscribete .subscribete-container__privacidad .checkbox-container label {
+  background-color: #fff;
+}
+.container .subscribete .subscribete-container__privacidad .checkbox-container__link {
+  color: #67625f;
+}
+.container .subscribete .subscribete-container__privacidad .checkbox-container__privacidad {
+  text-decoration: underline;
+}
+.container .subscribete .subscribete-container__button {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  background-color: #ff5958;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.container .contact__items {
+  margin-top: 5.5rem;
+}
+.container .contact__items::before {
+  display: block;
+  content: "";
+  border-top: 1px solid #bbb8b6;
+  padding-top: 35px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .contact__item {
+  line-height: 30px;
+  margin-bottom: 9px;
+  text-align: center;
+}
+.container .contact__item-link {
+  display: flex;
+  flex-flow: column;
+  color: #ff5958;
+  text-transform: uppercase;
+  font-size: 1.4rem;
 .navbar {
   background-color: #f8f8f8;
   height: 3.5rem;
@@ -58,6 +191,7 @@ ul {
 }
 .navbar__magnifier {
   width: 1.5rem;
+
 }
 
 /*# sourceMappingURL=styles.css.map */
