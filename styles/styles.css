@@ -10,6 +10,12 @@ html {
   font-size: 62.5%;
 }
 
+.ROOT {
+  font-size: 1.6rem;
+  max-width: 39rem;
+  margin: 0 auto;
+}
+
 a {
   text-decoration: none;
 }
