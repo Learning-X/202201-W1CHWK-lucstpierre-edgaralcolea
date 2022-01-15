@@ -3,11 +3,12 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
+  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
 }
 
 .ROOT {
@@ -22,6 +23,35 @@ a {
 
 ul {
   list-style: none;
+}
+
+.navbar {
+  background-color: #f8f8f8;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__icon {
+  padding: 1.5rem;
+}
+.navbar__search {
+  background-color: #bbb8b6;
+  height: 5rem;
+  width: 5rem;
+}
+.navbar__cart {
+  background-color: #ff5959;
+  height: 5rem;
+  width: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__cart__count {
+  color: #fff;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

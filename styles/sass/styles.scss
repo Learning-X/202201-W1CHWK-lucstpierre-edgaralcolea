@@ -1,1 +1,29 @@
 @use "base";
+.navbar {
+  background-color: #f8f8f8;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    padding: 1.5rem;
+  }
+  &__search {
+    background-color: #bbb8b6;
+    height: 5rem;
+    width: 5rem;
+  }
+  &__cart {
+    background-color: #ff5959;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__cart__count {
+    color: #fff;
+    font-size: 2rem;
+  }
+}
