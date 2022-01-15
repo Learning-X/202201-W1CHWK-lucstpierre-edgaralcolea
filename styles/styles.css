@@ -27,31 +27,37 @@ ul {
 
 .navbar {
   background-color: #f8f8f8;
-  height: 5rem;
+  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.navbar__icon {
-  padding: 1.5rem;
+.navbar__placeholder {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.navbar__search {
+.navbar__placeholder--grey {
   background-color: #bbb8b6;
-  height: 5rem;
-  width: 5rem;
 }
-.navbar__cart {
+.navbar__placeholder--red {
   background-color: #ff5959;
-  height: 5rem;
-  width: 5rem;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .navbar__cart__count {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+.navbar__icon {
+  width: 2.4rem;
+}
+.navbar__cart {
+  width: 2.5rem;
+  padding-right: 5px;
+}
+.navbar__magnifier {
+  width: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
