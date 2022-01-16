@@ -67,7 +67,6 @@ ul {
 }
 
 .main {
-  height: 40rem;
   background-color: #f8f8f8;
   text-align: center;
 }
@@ -77,15 +76,56 @@ ul {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 800;
   letter-spacing: 0.5rem;
-  width: 200px;
+  width: 20rem;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 .main__cake {
-  height: 10rem;
+  height: 12rem;
   position: relative;
-  bottom: 5rem;
+  bottom: 6rem;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgholder {
+  margin-top: 1rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  position: relative;
+}
+.imgholder__image {
+  width: 40rem;
+}
+.imgholder__image--fit {
+  object-fit: cover;
+  object-position: top;
+  width: 40rem;
+  height: 16.7rem;
+}
+.imgholder__text {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 45%;
+  align-self: flex-start;
+  bottom: 0;
+  text-align: left;
+  padding: 2rem;
+}
+.imgholder h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #67625f;
 }
 
 .footer {
@@ -218,12 +258,6 @@ ul {
   color: #ff5958;
   text-transform: uppercase;
   font-size: 1.4rem;
-}
-
-@media (min-width: 600px) {
-  body {
-    background-color: aqua;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
