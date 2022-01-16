@@ -25,19 +25,75 @@ ul {
   list-style: none;
 }
 
+.navbar {
+  background-color: #f8f8f8;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__placeholder {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__placeholder--grey {
+  background-color: #bbb8b6;
+}
+.navbar__placeholder--red {
+  background-color: #ff5959;
+}
+.navbar__cart__count {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
+}
+.navbar__icon {
+  width: 2.4rem;
+}
+.navbar__cart {
+  width: 2.5rem;
+  padding-right: 5px;
+}
+.navbar__magnifier {
+  width: 1.5rem;
+}
+
+.hero {
+  padding-top: 3rem;
+  height: 25rem;
+  text-align: center;
+}
+
+.main {
+  height: 40rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+.main h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.5rem;
+  border-top: 3px solid #000;
+}
+.main__cake {
+  height: 10rem;
+  position: relative;
+  bottom: 5rem;
+}
 
 .footer {
   background-color: #f8f8f8;
 }
 .footer__copyright {
-  width: 100%;
+  width: 39rem;
   color: #ffffff;
   background-color: #ff5958;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
   bottom: 0;
   font-size: 1.4rem;
   line-height: 5rem;
@@ -158,63 +214,6 @@ ul {
   color: #ff5958;
   text-transform: uppercase;
   font-size: 1.4rem;
-.navbar {
-  background-color: #f8f8f8;
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navbar__placeholder {
-  width: 3.5rem;
-  height: 3.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navbar__placeholder--grey {
-  background-color: #bbb8b6;
-}
-.navbar__placeholder--red {
-  background-color: #ff5959;
-}
-.navbar__cart__count {
-  color: #fff;
-  font-size: 1.5rem;
-  font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
-}
-.navbar__icon {
-  width: 2.4rem;
-}
-.navbar__cart {
-  width: 2.5rem;
-  padding-right: 5px;
-}
-.navbar__magnifier {
-  width: 1.5rem;
-
-}
-
-.hero {
-  padding-top: 3rem;
-  height: 25rem;
-  text-align: center;
-}
-
-.main {
-  height: 40rem;
-  background-color: #f8f8f8;
-  text-align: center;
-}
-.main h1 {
-  font-family: "Source Sans Pro", sans-serif;
-  letter-spacing: 0.5rem;
-  border-top: 3px solid #000;
-}
-.main__cake {
-  height: 10rem;
-  position: relative;
-  bottom: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
