@@ -13,7 +13,6 @@ html {
 
 .ROOT {
   font-size: 1.6rem;
-  max-width: 39rem;
   margin: 0 auto;
 }
 
@@ -27,14 +26,14 @@ ul {
 
 .navbar {
   background-color: #f8f8f8;
-  height: 3.5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .navbar__placeholder {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,18 +46,18 @@ ul {
 }
 .navbar__cart__count {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
 }
 .navbar__icon {
-  width: 2.4rem;
+  width: 3rem;
 }
 .navbar__cart {
-  width: 2.5rem;
+  width: 3rem;
   padding-right: 5px;
 }
 .navbar__magnifier {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .hero {
@@ -93,7 +92,6 @@ ul {
   background-color: #f8f8f8;
 }
 .footer__copyright {
-  width: 39rem;
   color: #ffffff;
   background-color: #ff5958;
   height: 5rem;
@@ -220,6 +218,12 @@ ul {
   color: #ff5958;
   text-transform: uppercase;
   font-size: 1.4rem;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: aqua;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
