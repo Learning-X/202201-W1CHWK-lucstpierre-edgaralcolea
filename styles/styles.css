@@ -63,7 +63,7 @@ ul {
 
 .hero {
   padding-top: 3rem;
-  height: 25rem;
+  height: 20rem;
   text-align: center;
 }
 
@@ -73,9 +73,15 @@ ul {
   text-align: center;
 }
 .main h1 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
   letter-spacing: 0.5rem;
-  border-top: 3px solid #000;
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .main__cake {
   height: 10rem;
