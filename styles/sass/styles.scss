@@ -3,13 +3,13 @@
 
 .navbar {
   background-color: #f8f8f8;
-  height: 3.5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   &__placeholder {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,46 +22,100 @@
   }
   &__cart__count {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial",
       sans-serif;
   }
   &__icon {
-    width: 2.4rem;
+    width: 3rem;
   }
   &__cart {
-    width: 2.5rem;
+    width: 3rem;
     padding-right: 5px;
   }
   &__magnifier {
-    width: 1.5rem;
+    width: 2rem;
   }
 }
 .hero {
   padding-top: 3rem;
-  height: 25rem;
+  height: 20rem;
   text-align: center;
 }
+
 .main {
-  height: 40rem;
   background-color: #f8f8f8;
   text-align: center;
+  height: 85.1rem;
   h1 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     font-family: "Source Sans Pro", sans-serif;
+    font-weight: 800;
     letter-spacing: 0.5rem;
-    border-top: 3px solid #000;
+    width: 20rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 5rem;
   }
   &__cake {
-    height: 10rem;
+    height: 12rem;
     position: relative;
-    bottom: 5rem;
+    bottom: 6rem;
+  }
+}
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.5rem;
+}
+.imgholder {
+  margin-top: 1rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__image {
+    width: 40rem;
+    &--fit {
+      object-fit: cover;
+      object-position: top;
+      width: 40rem;
+      height: 16.7rem;
+    }
+  }
+  &__text {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    width: 45%;
+    align-self: flex-start;
+    bottom: 0;
+    text-align: left;
+    padding: 2rem;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: #67625f;
+  }
+}
+
+.view-button {
+  background-color: variables.$red;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  :hover {
+    text-decoration: underline;
   }
 }
 .footer {
   background-color: variables.$primary-mobile;
 
   &__copyright {
-    width: 39rem;
     color: variables.$text-white;
     background-color: variables.$red;
     height: 5rem;
@@ -212,4 +266,8 @@
       font-size: 1.4rem;
     }
   }
+}
+
+//Versión Desktop
+@media (min-width: 600px) {
 }

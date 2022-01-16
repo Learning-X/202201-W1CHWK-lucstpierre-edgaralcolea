@@ -13,7 +13,6 @@ html {
 
 .ROOT {
   font-size: 1.6rem;
-  max-width: 39rem;
   margin: 0 auto;
 }
 
@@ -27,14 +26,14 @@ ul {
 
 .navbar {
   background-color: #f8f8f8;
-  height: 3.5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .navbar__placeholder {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,47 +46,102 @@ ul {
 }
 .navbar__cart__count {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Myriad Pro", "Myriad Web", "Tahoma", "Helvetica", "Arial", sans-serif;
 }
 .navbar__icon {
-  width: 2.4rem;
+  width: 3rem;
 }
 .navbar__cart {
-  width: 2.5rem;
+  width: 3rem;
   padding-right: 5px;
 }
 .navbar__magnifier {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .hero {
   padding-top: 3rem;
-  height: 25rem;
+  height: 20rem;
   text-align: center;
 }
 
 .main {
-  height: 40rem;
   background-color: #f8f8f8;
   text-align: center;
+  height: 85.1rem;
 }
 .main h1 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 800;
   letter-spacing: 0.5rem;
-  border-top: 3px solid #000;
+  width: 20rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 .main__cake {
-  height: 10rem;
+  height: 12rem;
   position: relative;
-  bottom: 5rem;
+  bottom: 6rem;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.5rem;
+}
+
+.imgholder {
+  margin-top: 1rem;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.imgholder__image {
+  width: 40rem;
+}
+.imgholder__image--fit {
+  object-fit: cover;
+  object-position: top;
+  width: 40rem;
+  height: 16.7rem;
+}
+.imgholder__text {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 45%;
+  align-self: flex-start;
+  bottom: 0;
+  text-align: left;
+  padding: 2rem;
+}
+.imgholder h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: #67625f;
+}
+
+.view-button {
+  background-color: #ff5958;
+  padding: 1.5rem 3rem;
+  color: #fff;
+}
+.view-button :hover {
+  text-decoration: underline;
 }
 
 .footer {
   background-color: #f8f8f8;
 }
 .footer__copyright {
-  width: 39rem;
   color: #ffffff;
   background-color: #ff5958;
   height: 5rem;
