@@ -46,7 +46,7 @@
 .main {
   background-color: #f8f8f8;
   text-align: center;
-
+  height: 85.1rem;
   h1 {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -69,6 +69,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5.5rem;
 }
 .imgholder {
   margin-top: 1rem;
@@ -77,7 +78,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
   position: relative;
   &__image {
     width: 40rem;
@@ -101,6 +101,15 @@
     font-weight: 800;
     font-size: 1.8rem;
     color: #67625f;
+  }
+}
+
+.view-button {
+  background-color: variables.$red;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  :hover {
+    text-decoration: underline;
   }
 }
 .footer {

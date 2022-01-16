@@ -69,6 +69,7 @@ ul {
 .main {
   background-color: #f8f8f8;
   text-align: center;
+  height: 85.1rem;
 }
 .main h1 {
   border-top: 2px solid black;
@@ -92,6 +93,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5.5rem;
 }
 
 .imgholder {
@@ -101,7 +103,6 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
   position: relative;
 }
 .imgholder__image {
@@ -126,6 +127,15 @@ ul {
   font-weight: 800;
   font-size: 1.8rem;
   color: #67625f;
+}
+
+.view-button {
+  background-color: #ff5958;
+  padding: 1.5rem 3rem;
+  color: #fff;
+}
+.view-button :hover {
+  text-decoration: underline;
 }
 
 .footer {
