@@ -1,6 +1,53 @@
 @use "base";
 @use "variables";
 
+.topbar {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 90;
+}
+.squared-links {
+  margin-left: 5rem;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  ul {
+    display: block;
+
+    li {
+      width: 7rem;
+      padding-right: 1rem;
+      display: inline-block;
+      height: 7rem;
+      position: relative;
+      z-index: 9000;
+      font-size: 1rem;
+
+      &:hover {
+        height: 13rem;
+      }
+    }
+    li:first-child {
+      color: variables.$red;
+      background: url("/assets/images/maria-lunarillos.png") variables.$red
+        bottom center no-repeat;
+      height: 13rem;
+    }
+    li:nth-child(2) {
+      background: url("/assets/images/cucute.png") variables.$blue bottom center
+        no-repeat;
+      color: variables.$blue;
+    }
+    li:last-child {
+      background: url("/assets/images/mumuchu.png") variables.$yellow bottom
+        center no-repeat;
+      color: variables.$yellow;
+    }
+  }
+}
 .navbar {
   background-color: #f8f8f8;
   height: 5rem;
@@ -39,7 +86,7 @@
 }
 
 .hero {
-  padding-top: 3rem;
+  margin-top: 8rem;
   height: 20rem;
   text-align: center;
 }
@@ -122,21 +169,8 @@
     padding: 0;
 
     background-color: variables.$primary-mobile;
-
-    &__copyright {
-      color: variables.$text-white;
-      background-color: variables.$red;
-      height: 5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      bottom: 0;
-      font-size: 1.4rem;
-      line-height: 5rem;
-    }
   }
 }
-
 .table-contact-footer {
   padding-top: 20px;
   background-color: variables.$primary-mobile;
@@ -297,7 +331,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
   bottom: 0;
   font-size: 1.4rem;
   line-height: 5rem;
