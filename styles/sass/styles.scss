@@ -10,6 +10,7 @@
   z-index: 90;
 }
 .squared-links {
+  display: none;
   margin-left: 5rem;
   z-index: 100;
   position: fixed;
@@ -66,6 +67,34 @@
     &--red {
       background-color: #ff5959;
     }
+    &--cart:hover {
+      background-color: variables.$red;
+      img {
+        content: url(/assets/images/web-icons/whitecart.png);
+      }
+    }
+    &--login {
+      span {
+        display: none;
+        white-space: nowrap;
+        margin-right: 1rem;
+        display: block;
+        font-size: 1.3rem;
+        color: variables.$text-gray;
+        cursor: pointer;
+      }
+      &__icon {
+        width: 3.2rem;
+      }
+      &:hover {
+        img {
+          content: url("/assets/images/web-icons/redperson.png");
+        }
+        span {
+          color: variables.$red;
+        }
+      }
+    }
   }
   &__cart__count {
     color: #fff;
@@ -74,10 +103,13 @@
       sans-serif;
   }
   &__icon {
-    width: 3rem;
+    width: 3.2rem;
+    &--person:hover {
+      content: url("/assets/images/web-icons/redperson.png");
+    }
   }
   &__cart {
-    width: 3rem;
+    width: 3.5rem;
     padding-right: 5px;
   }
   &__magnifier {
@@ -334,4 +366,40 @@
   bottom: 0;
   font-size: 1.4rem;
   line-height: 5rem;
+}
+@media (min-width: 600px) {
+  .squared-links {
+    display: block;
+  }
+  .navbar {
+    background-color: #f8f8f8;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__placeholder {
+      &--login {
+        span {
+          display: block;
+          white-space: nowrap;
+          margin-right: 1rem;
+          display: block;
+          font-size: 1.3rem;
+          color: variables.$text-gray;
+          cursor: pointer;
+        }
+        &__icon {
+          width: 3.2rem;
+        }
+        &:hover {
+          img {
+            content: url("/assets/images/web-icons/redperson.png");
+          }
+          span {
+            color: variables.$red;
+          }
+        }
+      }
+    }
+  }
 }
