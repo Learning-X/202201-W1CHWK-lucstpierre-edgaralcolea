@@ -74,8 +74,9 @@
       }
     }
     &--login {
+      padding-left: 10rem;
       span {
-        display: none;
+        visibility: hidden;
         white-space: nowrap;
         margin-right: 1rem;
         display: block;
@@ -367,39 +368,25 @@
   font-size: 1.4rem;
   line-height: 5rem;
 }
+//Versión desktop
 @media (min-width: 600px) {
   .squared-links {
     display: block;
   }
   .navbar {
-    background-color: #f8f8f8;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &__placeholder {
       &--login {
+        padding-left: 0px;
         span {
-          display: block;
-          white-space: nowrap;
-          margin-right: 1rem;
-          display: block;
-          font-size: 1.3rem;
-          color: variables.$text-gray;
-          cursor: pointer;
-        }
-        &__icon {
-          width: 3.2rem;
-        }
-        &:hover {
-          img {
-            content: url("/assets/images/web-icons/redperson.png");
-          }
-          span {
-            color: variables.$red;
-          }
+          visibility: visible;
         }
       }
     }
+  }
+  .hero img {
+    content: url(/assets/images/logo.png);
+  }
+  .navbar__icon--burger {
+    display: none;
   }
 }
